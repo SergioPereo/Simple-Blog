@@ -37,7 +37,6 @@ app.post('/api/publications/',(req,res)=>{
 
 app.get('/api/publications',(req,res)=>{
   Publication.find()
-             .populate('themes')
              .exec()
              .then(publicationsList=>{
                res.status(200).send(publicationsList)
