@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
-app.use(corse());
+app.use(cors());
 
 app.get('/',(req,res)=>{
   res.status(200).send('Welcome to my Blog API!')
