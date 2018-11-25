@@ -12,7 +12,7 @@ const publicationSchema = Schema({
   author: {type: String},
   date: {type: Date},
   message: {type: String},
-  comments: [String],
+  comments: [{autor: {type: String}, commentMessage: {type: String}, commentDate: {type: Date}}],
   themes: [{type: ObjectId, ref:'Type'}],
 });
 
