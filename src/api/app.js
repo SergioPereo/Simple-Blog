@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const {Publication, Type} = require('../database/mongooseController');
 const app = express();
 const bodyParser = require('body-parser');
@@ -6,6 +7,7 @@ const PORT = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
+app.use(corse());
 
 app.get('/',(req,res)=>{
   res.status(200).send('Welcome to my Blog API!')
