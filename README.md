@@ -10,7 +10,7 @@
 ---
 
 ## General Information
-Javascript Blog API Code (Just a simple thing do it for an academic concept)
+Javascript Blog API Code (Just a simple thing for an academic concept)
 
 ---
 
