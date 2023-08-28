@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 const ObjectId = mongoose.ObjectId;
-const URI_DB = 'mongodb://sergiopereo:joeapp2128@ds039027.mlab.com:39027/joe-app';
+const URI_DB = '';
 
 mongoose.connect(URI_DB, {useNewUrlParser:true}, ()=>{
   console.log('Succesful connection!');
